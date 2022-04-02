@@ -1,0 +1,205 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3d3d3d;
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid #d5d5d5;
+    position: fixed;
+    width: 100%;
+}
+
+.menu{ 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+}
+
+.link-logotipo{
+    font-size: 24px;
+    color: #3d3d3d;
+}
+
+.menu span{
+    color: #6592c9;
+}
+
+.link-topo:hover{
+    border-bottom: 2px solid blueviolet;
+}
+
+.link-topo{
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.menu a{
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.tamanho-maximo-container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.img-fundo{
+    background-image: url(img/img-fundo.jpg);
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secoes{
+    text-align: center;
+    margin: 50px 0;
+}
+
+h1, h2, h3{
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.fotos-quartos{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    padding: 0 5px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.info-quartos p{
+    font-weight: 900;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li{
+    width: 25%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.rodape{
+    background-color: #49997d;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rodape-info{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.link-rodape{
+    text-decoration: none;
+    color: #fff;
+}
+
+.img-rodape{
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.copy{
+    border-top: 1px solid #3b7863;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .link-logotipo{
+        margin-left: 10px;
+    }
+
+    .info-quartos ul li{
+        font-size: 18px;
+    }
+
+    .fotos-quartos img{
+        width: calc(100% / 3);
+    }
+
+}
+
+@media (max-width: 425px){
+    .topo{
+        /* padding-bottom: 45px; */
+        height: 80px;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .link-logotipo{
+        padding-bottom: 10px;
+    }
+
+    .link-menu{
+        border-top: 1px solid grey;
+        text-align: center;     
+        margin: 0 20px;   
+    }
+
+    .fotos-quartos{
+        flex-wrap: wrap;
+    }
+
+    .fotos-quartos img{
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    li{
+        width: 100%;
+        margin: 0;
+    }
+    .img-rodape{
+        height: 30px;
+        width: 40px;
+        object-fit: cover;
+        background-size: cover;
+        padding: 0 ;
+        margin: 3px;
+    }
+
+    .rodape{
+        font-size: 11px
+    }
+
+    .rodape h4{
+        font-size: 11px
+    }
+}
